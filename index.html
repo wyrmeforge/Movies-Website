@@ -2,23 +2,250 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html|Css</title>
+    <title>Movies Responsive Website</title>
+        <!--    Fav icon -->
+    <link rel="shortcut icon" href="images/fav%20icon.png">
+        <!--    style.ccs link-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
 </head>
 <body>
-<header>
-    <div class="logo" onclick="slowScroll('#top')">
-        <span>Rm</span>
-    </div>
-    <div class="about">
-        <a href="#" onclick="slowScroll('#main')">About</a>
-        <a href="#" onclick="slowScroll('#contact')">Contact</a>
-        <a href="#" onclick="slowScroll('#store')">Store</a>
-        <a href="#" onclick="slowScroll('#price')">Price</a>
-    </div>
-</header>
 
-<script src="https://ajax.googleapis.com/ajax/libs/d3js/6.5.0/d3.min.js"></script>
-<script src="app.js"></script>
+    <nav>
+        <a href="" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Hollywood</a></li>
+            <li><a href="#">Horror</a></li>
+        </ul>
+
+        <div class="search">
+            <input type="text" placeholder="Find Your Favourite Movies"/>
+            <i class="fas fa-search"></i>
+        </div>
+
+    </nav>
+    <section id="main">
+        <h1 class="showcase-heading">Showcase</h1>
+
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="showcase-box">
+                    <img src="images/s-1.jpg"/>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="showcase-box">
+                    <img src="images/s-2.jpg"/>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="showcase-box">
+                    <img src="images/s-3.jpg"/>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="showcase-box">
+                    <img src="images/s-4.jpg"/>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="showcase-box">
+                    <img src="images/s-5.png"/>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="latest">
+        <h2 class="latest-heading">Latest Movies</h2>
+        
+        <ul id="autoWidth2" class="cs-hidden">
+            <li class="item-a">
+                <div class="latest-box">
+
+                    <div class="latest-b-img">
+                        <img src="images/m-1.jpg" alt="">
+                    </div>
+
+                    <div class="latest-b-text">
+                        <strong>Kin 2020</strong>
+                        <p>Action Movie</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="latest-box">
+
+                    <div class="latest-b-img">
+                        <img src="images/m-2.jpg" alt="">
+                    </div>
+
+                    <div class="latest-b-text">
+                        <strong>Peninsula</strong>
+                        <p>Action Movie</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="latest-box">
+
+                    <div class="latest-b-img">
+                        <img src="images/m-3.jpg" alt="">
+                    </div>
+
+                    <div class="latest-b-text">
+                        <strong>Inception</strong>
+                        <p>Action Movie</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="latest-box">
+
+                    <div class="latest-b-img">
+                        <img src="images/m-4.jpg" alt="">
+                    </div>
+
+                    <div class="latest-b-text">
+                        <strong>Iron Man 3</strong>
+                        <p>Action Movie</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="latest-box">
+
+                    <div class="latest-b-img">
+                        <img src="images/m-5.jpg" alt="">
+                    </div>
+
+                    <div class="latest-b-text">
+                        <strong>Venom</strong>
+                        <p>Action Movie</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="latest-box">
+
+                    <div class="latest-b-img">
+                        <img src="images/m-6.jpg" alt="">
+                    </div>
+
+                    <div class="latest-b-text">
+                        <strong>Aquaman</strong>
+                        <p>Action Movie</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item-g">
+                <div class="latest-box">
+
+                    <div class="latest-b-img">
+                        <img src="images/m-7.jpeg" alt="">
+                    </div>
+
+                    <div class="latest-b-text">
+                        <strong>Jungle Cruise</strong>
+                        <p>Action Movie</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <div class="movies-heading">
+        <h2>Movies</h2>
+    </div>
+    
+    <section id="movies-list">
+        <div class="movies-box">
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/l-1.jpg" alt="">
+            </div>
+            <a href="">Into Darkness (2021) Full Movie[In English] With Ukraine Subtitles </a>
+        </div>
+        <div class="movies-box">
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/l-2.jpg" alt="">
+            </div>
+            <a href="">Fantastic Beasts (2019) Full Movie[In English] With Ukraine Subtitles </a>
+        </div>
+        <div class="movies-box">
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/l-3.jpg" alt="">
+            </div>
+            <a href="">Les Croods (2018) Full Movie[In English] With Ukraine Subtitles </a>
+        </div>
+        <div class="movies-box">
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/l-4.jpg" alt="">
+            </div>
+            <a href="">Toy Story 3 (2013) Full Movie[In English] With Ukraine Subtitles </a>
+        </div>
+        <div class="movies-box">
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/l-5.jpg" alt="">
+            </div>
+            <a href="">Coco (2020) Full Movie[In English] With Ukraine Subtitles </a>
+        </div>
+        <div class="movies-box">
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/l-6.jpg" alt="">
+            </div>
+            <a href="">The Rise Of Skywalker(2018) Full Movie[In English] With Ukraine Subtitles </a>
+        </div>
+        <div class="movies-box">
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/l-7.jpg" alt="">
+            </div>
+            <a href="">Star Wars: Rogue One (2020) Full Movie[In English] With Ukraine Subtitles </a>
+        </div>
+        <div class="movies-box">
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/l-8.jpg" alt="">
+            </div>
+            <a href="">Venom (2021) Full Movie[In English] With Ukraine Subtitles </a>
+        </div>
+    </section>
+    
+    <div class="btns">
+        <a href="#">Previous</a>
+        <a href="#">Next</a>
+    </div>
+
+    <footer>
+        <p>Create by Wyrme 2021-2022</p>
+        <p>Copyright 2021 - Wyrme</p>
+    </footer>
+
+
+
+    
+
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </body>
 </html>
